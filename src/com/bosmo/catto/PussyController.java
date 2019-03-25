@@ -18,8 +18,10 @@ public class PussyController {
 	public String showCatto(HttpServletRequest request, Model model) {
 		
 		String catName = request.getParameter("cattoName");
+		String catType = request.getParameter("cattoType");
 		
 		model.addAttribute("name", catName);
+		model.addAttribute("type", catType);
 		
 		return ("catto");
 	}
